@@ -20,7 +20,7 @@ module Pod
           'PODS_ROOT'                    => '${SRCROOT}',
           'HEADER_SEARCH_PATHS'          => quote(target.build_headers.search_paths) + ' ' + quote(sandbox.public_headers.search_paths),
           'GCC_PREPROCESSOR_DEFINITIONS' => 'COCOAPODS=1',
-          # 'USE_HEADERMAP'                => 'NO'
+          'USE_HEADERMAP'                => 'NO'
         }
 
         xcconfig = Xcodeproj::Config.new
